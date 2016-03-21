@@ -25,7 +25,7 @@ class Solution(object):
             while p2 < ls2:
                 all_nums.append(nums2[p2])
                 p2 += 1
-        print all_nums
+        # print all_nums
         if (ls1 + ls2) % 2 == 1:
             median = all_nums[(ls1 + ls2) / 2]
         else:
