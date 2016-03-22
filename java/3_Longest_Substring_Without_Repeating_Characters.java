@@ -1,4 +1,5 @@
 public class Solution {
+    // example in leetcode book
     // public int lengthOfLongestSubstring(String s) {
     // 	boolean[] exist = new boolean[256];
     // 	int i = 0, maxLen = 0;
@@ -12,6 +13,7 @@ public class Solution {
     // 	}
     // 	return maxLen; 
     // }
+
     public int lengthOfLongestSubstring(String s) {
     	int[] charMap = new int[256];
     	Arrays.fill(charMap, -1);

@@ -1,4 +1,5 @@
 public class Solution {
+    // example in leetcode book
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     	int p1 = 0, p2 = 0, pos = 0;
     	int ls1 = nums1.length, ls2 = nums2.length;
