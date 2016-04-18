@@ -1,12 +1,10 @@
-# class Solution(object):
-#     def isMatch(self, s, p):
-#         """
-#         :type s: str
-#         :type p: str
-#         :rtype: bool
-#         """
 class Solution(object):
     def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
         # bottom up o(m*n)
         # https://leetcode.com/discuss/93024/easy-dp-java-solution-with-detailed-explanation
         if s == p:
