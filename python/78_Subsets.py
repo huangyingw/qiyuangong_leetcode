@@ -21,20 +21,32 @@ class Solution(object):
     #         curr_set.pop()
     #         self.get_subsets(res, nums, curr_set, ls, index + 1)
 
-    def subsets(self, nums):
-        # https://leetcode.com/discuss/89343/c-8-lines-bit-operation
-        # doesn't work when len(nums) > 32
-        nums.sort()
-        res = []
-        for i in range(1 << len(nums)):
-            res.append(self.get_subsets(nums, i))
-        return res
+    # def subsets(self, nums):
+    #     # https://leetcode.com/discuss/89343/c-8-lines-bit-operation
+    #     # doesn't work when len(nums) > 32
+    #     nums.sort()
+    #     res = []
+    #     for i in range(1 << len(nums)):
+    #         res.append(self.get_subsets(nums, i))
+    #     return res
+    #
+    # def get_subsets(self, nums, magic):
+    #     res = []
+    #     for i in range(len(nums)):
+    #         if (1 << i) & magic != 0:
+    #            res.append(nums[i])
+    #     return res
 
-    def get_subsets(self, nums, magic):
-        res = []
-        for i in range(len(nums)):
-            if (1 << i) & magic != 0:
-               res.append(nums[i])
+    def subsets(self, nums):
+        nums.sort()
+        res = [[]]
+        for index in range(len(nums)):
+            size = len(res)
+            # use existing subsets to generate new subsets
+            for j in range(size):
+                curr = list(res[j])
+                curr.append(nums[index])
+                res.append(curr)
         return res
 
 
