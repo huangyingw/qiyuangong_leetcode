@@ -55,6 +55,7 @@ class Solution(object):
     #     return max_len
 
     def lengthOfLongestSubstring(self, s):
+        # https://leetcode.com/articles/longest-substring-without-repeating-characters/
         charMap = {}
         for i in range(256):
             charMap[i] = -1
