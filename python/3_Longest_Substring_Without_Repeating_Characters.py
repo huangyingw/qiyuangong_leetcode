@@ -62,6 +62,8 @@ class Solution(object):
         ls = len(s)
         i = max_len = 0
         for j in range(ls):
+            # Note that when charMap[ord(s[j])] >= i, it means that there are
+            # duplicate character in current i,j. So we need to update i.
             if charMap[ord(s[j])] >= i:
                 i = charMap[ord(s[j])] + 1
             charMap[ord(s[j])]  = j
