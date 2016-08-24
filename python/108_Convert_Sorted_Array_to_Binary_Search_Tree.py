@@ -11,25 +11,24 @@ class Solution(object):
     #     :type nums: List[int]
     #     :rtype: TreeNode
     #     """
-    #     length = len(nums)
-    #     if length == 0:
+    #     # Recursion with slicing
+    #     if not nums:
     #         return None
-    #     mid = length / 2
-    #     current = TreeNode(nums[mid])
-    #     left = self.sortedArrayToBST(nums[mid])
-    #     try:
-    #         right = self.sortedArrayToBST(nums[mid + 1:])
-    #     except:
-    #         right = None
-    #     current.left = left
-    #     current.right = right
-    #     return current
+    #     mid = len(nums) / 2
+    #     root = TreeNode(nums[mid])
+    #     root.left = self.sortedArrayToBST(nums[:mid])
+    #     root.right = self.sortedArrayToBST(nums[mid + 1:])
+    #     return root
 
     def sortedArrayToBST(self, nums):
-        if not nums:
+        # Recursion with index
+        return self.getHelper(nums, 0, len(nums) - 1)
+
+    def getHelper(self, nums, start, end):
+        if start > end:
             return None
-        mid = len(nums) / 2
-        root = TreeNode(nums[mid])
-        root.left = self.sortedArrayToBST(nums[:mid])
-        root.right = self.sortedArrayToBST(nums[mid + 1:])
-        return root
+        mid = (start + end) / 2
+        node = TreeNode(nums[mid])
+        node.left = self.getHelper(nums, start, mid - 1)
+        node.right = self.getHelper(nums, mid + 1, end)
+        return node

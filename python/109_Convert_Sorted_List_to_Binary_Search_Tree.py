@@ -41,48 +41,53 @@ class Solution(object):
     #     return current
 
     # point in recursive function
-    # def __init__(self):
-    #     self.node = None
-    #
+    def __init__(self):
+        self.node = None
+    
+    def sortedListToBST(self, head):
+        # Bottom-up recursion O(n) and O(lgn)
+        if head is None:
+            return head
+        size = 0
+        pos = self.node = head
+        while pos is not None:
+           pos = pos.next
+           size += 1
+        return self.inorderHelper(0, size - 1)
+    
+    def inorderHelper(self, start, end):
+        if start > end:
+            return None
+        mid = (start + end) / 2
+        # left side and move
+        left = self.inorderHelper(start, mid - 1)
+        # move and create
+        root = TreeNode(self.node.val)
+        root.left = left
+        self.node = self.node.next
+        # right side and move
+        root.right = self.inorderHelper(mid + 1, end)
+        return root
+
+    # two point
+    # O(nlgn) and O(n)
     # def sortedListToBST(self, head):
     #     if head is None:
     #         return head
-    #     size = 0
-    #     pos = self.node = head
-    #     while pos is not None:
-    #        pos = pos.next
-    #        size += 1
-    #     return self.inorderHelper(0, size - 1)
-    #
-    # def inorderHelper(self, start, end):
-    #     if start > end:
+    #     return self.toBST(head, None)
+
+    # def toBST(self, head, tail):
+    #     fast = slow = head
+    #     if head == tail:
     #         return None
-    #     mid = (start + end) / 2
-    #     left = self.inorderHelper(start, mid - 1)
-    #     root = TreeNode(self.node.val)
-    #     root.left = left
-    #     self.node = self.node.next
-    #     root.right = self.inorderHelper(mid + 1, end)
+    #     while fast != tail and fast.next != tail:
+    #         fast = fast.next.next
+    #         slow = slow.next
+    #     root = TreeNode(slow.val)
+    #     root.left = self.toBST(head, slow)
+    #     root.right = self.toBST(slow.next, tail)
     #     return root
-
-    # two point
-    def sortedListToBST(self, head):
-        if head is None:
-            return head
-        return self.toBST(head, None)
-
-    def toBST(self, head, tail):
-        fast = slow = head
-        if head == tail:
-            return None
-        while fast != tail and fast.next != tail:
-            fast = fast.next.next
-            slow = slow.next
-        root = TreeNode(slow.val)
-        root.left = self.toBST(head, slow)
-        root.right = self.toBST(slow.next, tail)
-        return root
-
+        
 
 
 
