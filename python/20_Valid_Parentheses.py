@@ -1,13 +1,13 @@
 # class Solution(object):
 #     def isValid(self, s):
-#         """
-#         :type s: str
-#         :rtype: bool
-#         """
+        
 #
 class Solution:
-    # @return a boolean
     def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
         if s is None:
             return True
         stack = []
