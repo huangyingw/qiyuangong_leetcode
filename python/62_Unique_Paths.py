@@ -5,10 +5,7 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        dmap = []
-        for i in range(m):
-            temp = [0] * n
-            dmap.append(temp)
+        dmap = [[0] * n for _ in range(m)]
         for i in range(m):
             dmap[i][0] = 1
         for j in range(n):
