@@ -27,17 +27,30 @@ class Solution(object):
     #         # cannot judge which direction is sorted
     #         return min(self.get_min(nums, start, mid), self.get_min(nums, mid, end))
 
+    # def findMin(self, nums):
+    #     start, end = 0, len(nums) - 1
+    #     while start < end:
+    #         mid = (start + end) / 2
+    #         if nums[mid] > nums[end]:
+    #             start = mid + 1
+    #         elif nums[mid] < nums[end]:
+    #             end = mid
+    #         else:
+    #             end -= 1
+    #     return nums[start]
+
+
     def findMin(self, nums):
-        start, end = 0, len(nums) - 1
-        while start < end:
-            mid = (start + end) / 2
-            if nums[mid] > nums[end]:
-                start = mid + 1
-            elif nums[mid] < nums[end]:
-                end = mid
+        l, r = 0, len(nums) - 1
+        while l < r and nums[l] >= nums[r]:
+            mid = (l + r) / 2
+            if nums[mid] > nums[r]:
+                l = mid + 1
+            elif nums[mid] < nums[l]:
+                r = mid
             else:
-                end -= 1
-            print start, end
-        return nums[start]
+                # nums[l] = nums[r] = nums[mid]
+                l += 1
+        return nums[l]
 
 
