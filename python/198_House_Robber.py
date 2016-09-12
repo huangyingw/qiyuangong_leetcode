@@ -11,20 +11,26 @@ class Solution(object):
     #     dp = [0] * ls
     #     dp[0] = nums[0]
     #     for i in range(1, ls):
-    #         can = [0]
-    #         if i >= 2:
-    #             can.append(dp[i - 2])
-    #         if i >= 3:
-    #             can.append(dp[i - 3])
-    #         dp[i] = max(can) + nums[i]
-    #     return max(dp[ls - 1], dp[ls - 2])
+    #         if i < 2:
+    #             dp[i] = max(nums[i], dp[i - 1])
+    #         else:
+    #             dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])
+    #     return dp[ls - 1]
+
+    # def rob(self, nums):
+    #     if nums is None or len(nums) == 0:
+    #         return 0
+    #     if len(nums) == 1:
+    #         return nums[0]
+    #     nums[1] = max(nums[0], nums[1])
+    #     for i in range(2, len(nums)):
+    #         nums[i] = max(nums[i] + nums[i - 2], nums[i - 1])
+    #     return nums[-1]
 
     def rob(self, nums):
-        if nums is None or len(nums) == 0:
-            return 0
-        if len(nums) == 1:
-            return nums[0]
-        nums[1] = max(nums[0], nums[1])
-        for i in range(2, len(nums)):
-            nums[i] = max(nums[i] + nums[i - 2], nums[i - 1])
-        return nums[-1]
+        prevMax = currMax = 0
+        for num in nums:
+            temp = currMax
+            currMax = max(prevMax + num, currMax)
+            prevMax = temp
+        return currMax
