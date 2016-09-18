@@ -9,6 +9,7 @@
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/1_Two_Sum.py) | 1. Hash O(n) and O(n) space<br>2. Sort and search with two points O(n) and O(1) space |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/2_Add_Two_Numbers.py) | Note the carry from lower digit. |
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/3_Longest_Substring_Without_Repeating_Characters.py) |1. Check every possible substring O(n^2) <br>2. Remember the character index and current check pos, if character index >= current pos, then there is duplicate |
+| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/.py) | 1. Merge two sorted lists and compute median, O(m + n) and O(m + n)<br>2. An extension of median of two sorted arrays of equal size problem|
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/5_Longest_Palindromic_Substring.py) | [Background knowledge](http://en.wikipedia.org/wiki/Longest_palindromic_substring)<br>1. DP if s[i]==s[j] and P[i+1, j-1] then P[i,j]<br>2. A palindrome can be expanded from its center<br>3. Manacher algorithm|
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/7_Reverse_Integer.py) | Overflow when the result is greater than 2147483647
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/8_String_to_Integer(atoi).py) | Overflow, Space, and negative number |
@@ -80,3 +81,10 @@
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/337_House_Robber_III.py) | 1. Recursion with hash map, O(n) and O(n)<br>2. Recursion on two steps, O(n) and O(1) |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/339_Nested_List_Weight_Sum.py) | Depth-first recursion |
 | 340 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/340_Longest_Substring_with_At_Most_K_Distinct_Characters.py) | Maintain a sliding window with at most k distinct characters and a count for this window. Note that the start position need a loop to update.|
+| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/351_Android_Unlock_Patterns.py) |  |
+
+
+| # | ToDo |
+|---| ----- |
+
+| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; |
