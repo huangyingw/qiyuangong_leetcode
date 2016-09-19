@@ -59,7 +59,7 @@
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/154_Find_Minimum_in_Rotated_Sorted_Array_II.py) | Binary search with conditions, A[l] > A[r], A[l]=A[mid]=A[r] |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/155_Min_Stack.py) | Add another stack for min stack, maintance this stack when the main stack pop or push |
 | 156 | [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) &hearts;| [Python](https://github.com/qiyuangong/leetcode/blob/master/python/156_Binary_Tree_Upside_Down.py) | p.left = parent.right, parent.right = p.right, p.right = parent, parent = p.left, p = left |
-| 157	| [Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/157_Read_N_Characters_Given_Read4.py) | Handle the edge case (the end) |
+| 157 | [Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/157_Read_N_Characters_Given_Read4.py) | Handle the edge case (the end) |
 | 158 | [Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) &hearts;| [Python](https://github.com/qiyuangong/leetcode/blob/master/python/158_Read_N_Characters_Given_Read4_II_Call_multiple_times.py) | Store the pos and offset that is read by last read4 |
 | 159 | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/159_Longest_Substring_with_At_Most_Two_Distinct_Characters.py) | Maintain a sliding window that always satisfies such condition |
 | 161 | [One Edit Distance](https://leetcode.com/problems/one-edit-distance/) &hearts;| [Python](https://github.com/qiyuangong/leetcode/blob/master/python/161_One_Edit_Distance.py) | 1. Check the different position and conditions<br>2. [Edit distance](https://leetcode.com/problems/edit-distance/)|
@@ -68,6 +68,7 @@
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/167_Two_Sum_II_Input_array_is_sorted.py) | Two points O(n) and O(1) |
 | 186 | [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts;| [Python](https://github.com/qiyuangong/leetcode/blob/master/python/186_Reverse_Words_in_a_String_II.py) | Reverse all and reverse each words |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/198_House_Robber.py) | f(k) = max(f(k – 2) + num[k], f(k – 1)), O(n) and O(1) |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/200_Number_of_Islands.py) | 1. Quick union find, O(nlogn) and O(n^2)<br>2. BFS with marks, O(n^2) and O(1) |
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/213_House_Robber_II.py) | f(k) = max(f(k – 2) + num[k], max(dp[0~ls-2],dp[1~ls-1], O(n) and O(1)|
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/217_Contains_Duplicate.py) | 1. Set and compare length<br>2. Sort and check i,i +1|
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/219_Contains_Duplicate_II.py) | 1. Brute force<br> 2. Maintenance a set that contains previous k numbers, and check if curr in set |
@@ -78,13 +79,15 @@
 | 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/252_Meeting_Rooms.py) | 1. Sort and compare intervals[i].end with intervals[i+1], O(nlogn) and O(1)<br>2. Sort and check intervals when count >= 2, O(nlogn) and O(n) |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/259_3Sum_Smaller.py) | 1. Reduce to two sum smaller, then binary search, O(n^2lgn) and O(1)<br>2. Reduce to two sum smaller, then two points, O(n^2) and O(1)|
 | 288 | [Unique Word Abbreviation](https://leetcode.com/problems/unique-word-abbreviation/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/288_Unique_Word_Abbreviation.py) | hash |
+| 305 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/305_Number_of_Islands_II.py) | Quick union find with weights, O(nlogn) and O(n) |
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/337_House_Robber_III.py) | 1. Recursion with hash map, O(n) and O(n)<br>2. Recursion on two steps, O(n) and O(1) |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/339_Nested_List_Weight_Sum.py) | Depth-first recursion |
 | 340 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/340_Longest_Substring_with_At_Most_K_Distinct_Characters.py) | Maintain a sliding window with at most k distinct characters and a count for this window. Note that the start position need a loop to update.|
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/351_Android_Unlock_Patterns.py) |  |
 
 
-| # | ToDo |
+| # | To Understand |
 |---| ----- |
-
+| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; |
+
