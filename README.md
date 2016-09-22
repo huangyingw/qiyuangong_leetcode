@@ -85,10 +85,11 @@
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/339_Nested_List_Weight_Sum.py) | Depth-first recursion |
 | 340 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/340_Longest_Substring_with_At_Most_K_Distinct_Characters.py) | Maintain a sliding window with at most k distinct characters and a count for this window. Note that the start position need a loop to update.|
 | 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/351_Android_Unlock_Patterns.py) |  |
+| 388 | [Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/388_Longest_Absolute_File_Path.py) | 1. Store last length and rindex, O(n) and O(n) |
 
 
 | # | To Understand |
 |---| ----- |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
-| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; |
+| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; 
 
