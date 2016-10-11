@@ -48,6 +48,3 @@ class Solution(object):
             num[i], num[index] = num[index], num[i]
             self.permute(res, num, index + 1)
             num[i], num[index] = num[index], num[i]
-
-
-
