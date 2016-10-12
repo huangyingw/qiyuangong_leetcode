@@ -38,6 +38,7 @@ class Solution(object):
     #     return res
 
     def subsets(self, nums):
+        # Sort and iteratively generate n subset with n-1 subset, O(n^2) and O(2^n)
         nums.sort()
         res = [[]]
         for index in range(len(nums)):

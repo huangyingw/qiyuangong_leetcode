@@ -42,5 +42,3 @@ class Solution(object):
             # avoid duplicate subsets
             begin = size
         return res
-
-
