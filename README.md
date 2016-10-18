@@ -93,14 +93,15 @@
 | 337 | [House Robber III](https://leetcode.com/problems/house-robber-iii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/337_House_Robber_III.py) | 1. Recursion with hash map, O(n) and O(n)<br>2. Recursion on two steps, O(n) and O(1) |
 | 339 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/339_Nested_List_Weight_Sum.py) | Depth-first recursion |
 | 340 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/340_Longest_Substring_with_At_Most_K_Distinct_Characters.py) | Maintain a sliding window with at most k distinct characters and a count for this window. Note that the start position need a loop to update.|
-| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/351_Android_Unlock_Patterns.py) |  |
+| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/351_Android_Unlock_Patterns.py) | Backtracking, O(n!) and O(n) |
 | 368 | [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/368_Largest_Divisible_Subset.py) | Sort and generate x subset with previous results, O(n^2) and O(n^2) |
+| 370 | [Range Addition](https://leetcode.com/problems/range-addition/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/370_Range_Addition.py) | Interval problem with cumulative sums, O(n + k) and O(n) |
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/384_Shuffle_an_Array.py) | Fisher–Yates shuffle, O(n) and O(n) |
 | 388 | [Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/388_Longest_Absolute_File_Path.py) | Store last length and rindex, O(n) and O(n) |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/416_Partition_Equal_Subset_Sum.py) | DP, Check if sum of some elements can be half of total sum, O(total_sum / 2 * n) and O(total_sum / 2) |
+| 421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/421_Maximum_XOR_of_Two_Numbers_in_an_Array.py) | Check 0~32 prefix, check if there is x y in prefixes, where x ^ y = answer ^ 1, O(32n) and O(n) |
+| 422 | [Valid Word Square](https://leetcode.com/problems/valid-word-square/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/422_Valid_Word_Square.py) | Compare row with column, O(n^2) |
 
 | # | To Understand |
 |---| ----- |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
-| 351 | [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) &hearts; 
-
