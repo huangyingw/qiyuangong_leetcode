@@ -5,7 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):    
+
+class Solution(object):
     def __init__(self):
         self.result = -2147483647
 
