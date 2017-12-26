@@ -26,6 +26,5 @@ public class Solution {
     		curr.next = new ListNode(carry);
     	}
     	return dummyHead.next;
-        
     }
 }

@@ -33,17 +33,19 @@ class Solution(object):
     #     return median
 
     def findMedianSortedArrays(self, nums1, nums2):
-        N1, N2 = len(nums1), len(nums2)
-        if N1 < N2:
-            nums1, N1, nums2, N2 = nums2, N2, nums1, N1
-        l, r = 0, N2 * 2
+        # https://discuss.leetcode.com/topic/4996/share-my-o-log-min-m-n-solution-with-explanation
+        # https://discuss.leetcode.com/topic/16797/very-concise-o-log-min-m-n-iterative-solution-with-detailed-explanation
+        ls1, ls2 = len(nums1), len(nums2)
+        if ls1 < ls2:
+            return self.findMedianSortedArrays(nums2, nums1)
+        l, r = 0, ls2 * 2
         while l <= r:
             mid2 = (l + r) >> 1
-            mid1 = N1 + N2 - mid2
+            mid1 = ls1 + ls2 - mid2
             L1 = -sys.maxint - 1 if mid1 == 0 else nums1[(mid1 - 1) >> 1]
             L2 = -sys.maxint - 1 if mid2 == 0 else nums2[(mid2 - 1) >> 1]
-            R1 = sys.maxint if mid1 == 2 * N1 else nums1[mid1 >> 1]
-            R2 = sys.maxint if mid2 == 2 * N2 else nums2[mid2 >> 1]
+            R1 = sys.maxint if mid1 == 2 * ls1 else nums1[mid1 >> 1]
+            R2 = sys.maxint if mid2 == 2 * ls2 else nums2[mid2 >> 1]
             if L1 > R2:
                 l = mid2 + 1
             elif L2 > R1:
