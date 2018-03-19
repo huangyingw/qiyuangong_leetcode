@@ -66,6 +66,6 @@ class Solution(object):
             # duplicate character in current i,j. So we need to update i.
             if charMap[ord(s[j])] >= i:
                 i = charMap[ord(s[j])] + 1
-            charMap[ord(s[j])]  = j
+            charMap[ord(s[j])] = j
             max_len = max(max_len, j - i + 1)
         return max_len

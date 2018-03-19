@@ -33,5 +33,3 @@ class Solution:
         if nums[l] < target:
             return l + 1
         return l
-
-
