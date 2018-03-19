@@ -1,4 +1,4 @@
-# My Python Solutions for Leetcode
+# My Python & JAVA Solutions for Leetcode (inspired by [haoel's leetcode](https://github.com/haoel/leetcode))
 
 [The whole lists](https://github.com/qiyuangong/leetcode/tree/master/python):
 
@@ -122,3 +122,10 @@
 | # | To Understand |
 |---| ----- |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
+
+# Other Leetcode Repos
+
+1. [haoel's leetcode](https://github.com/haoel/leetcode)
+2. [soulmachine's leetcode](https://github.com/soulmachine/leetcode)
+3. [kamyu104's LeetCode](https://github.com/kamyu104/LeetCode)
+4. [gouthampradhan's leetcode](https://github.com/gouthampradhan/leetcode)
