@@ -1,6 +1,6 @@
 # My Python & JAVA Solutions for Leetcode (inspired by [haoel's leetcode](https://github.com/haoel/leetcode))
 
-[The whole lists](https://github.com/qiyuangong/leetcode/tree/master/python):
+[Python](https://github.com/qiyuangong/leetcode/tree/master/python) and [Java](https://github.com/qiyuangong/leetcode/tree/master/java) list
 
 &hearts; means you need a subscription.
 
@@ -116,7 +116,8 @@
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/384_Shuffle_an_Array.py) | Fisher–Yates shuffle, O(n) and O(n) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/387_First_Unique_Character_in_a_String.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/387_First_Unique_Character_in_a_String.java) | Get frequency of each letter, return first letter with frequency 1, O(n) and O(1)  |
 | 388 | [Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/388_Longest_Absolute_File_Path.py) | Store last length and rindex, O(n) and O(n) |
-| 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/389_Find_the_Difference.py.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/389_Find_the_Difference.java) | 1. Imaging letter a as 0, then the sum(t)-sum(s) is the result<br> 2. Based on solution 1, bit manipulate |
+| 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/389_Find_the_Difference.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/389_Find_the_Difference.java) | 1. Imaging letter a as 0, then the sum(t)-sum(s) is the result<br> 2. Based on solution 1, bit manipulate |
+| 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/404_Sum_of_Left_Leaves.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/404_Sum_of_Left_Leaves.java) | 1. Recursively DFS with root.left.left and root.left.right check<br>2. The same DFS based on stack |
 | 408 | [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/408_Valid_Word_Abbreviation.py) | Go over abbr and word, O(n) and O(1) |
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/416_Partition_Equal_Subset_Sum.py) | DP, Check if sum of some elements can be half of total sum, O(total_sum / 2 * n) and O(total_sum / 2) |
 | 421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/421_Maximum_XOR_of_Two_Numbers_in_an_Array.py) | Check 0~32 prefix, check if there is x y in prefixes, where x ^ y = answer ^ 1, O(32n) and O(n) |
