@@ -1,6 +1,6 @@
-# My Python & JAVA Solutions for Leetcode (inspired by [haoel's leetcode](https://github.com/haoel/leetcode))
+# Python & JAVA Solutions for Leetcode (inspired by [haoel's leetcode](https://github.com/haoel/leetcode))
 
-[Python](https://github.com/qiyuangong/leetcode/tree/master/python) and [Java](https://github.com/qiyuangong/leetcode/tree/master/java) list
+[Python](https://github.com/qiyuangong/leetcode/tree/master/python) and [Java](https://github.com/qiyuangong/leetcode/tree/master/java) full list
 
 &hearts; means you need a subscription.
 
@@ -113,7 +113,8 @@
 | 368 | [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/368_Largest_Divisible_Subset.py) | Sort and generate x subset with previous results, O(n^2) and O(n^2) |
 | 369 | [Plus One Linked List](https://leetcode.com/problems/plus-one-linked-list/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/369_Plus_One_Linked_List.py) | 1. Stack or list that store the list, O(n) and O(n)<br>2. Two points, the first to the tail, the second to the latest place that is not 9, O(n) and O(1) |
 | 370 | [Range Addition](https://leetcode.com/problems/range-addition/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/370_Range_Addition.py) | Interval problem with cumulative sums, O(n + k) and O(n) |
-| 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/384_Shuffle_an_Array.py) | Fisher–Yates shuffle, O(n) and O(n) |
+| 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/383_Ransom_Note.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/383_Ransom_Note.java) | Get letter frequency (table or hash map) of magazine, then check randomNote frequency |
+| 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/384_Shuffle_an_Array.py) | [Fisher–Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle), O(n) and O(n) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/387_First_Unique_Character_in_a_String.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/387_First_Unique_Character_in_a_String.java) | Get frequency of each letter, return first letter with frequency 1, O(n) and O(1)  |
 | 388 | [Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/388_Longest_Absolute_File_Path.py) | Store last length and rindex, O(n) and O(n) |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/389_Find_the_Difference.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/389_Find_the_Difference.java) | 1. Imaging letter a as 0, then the sum(t)-sum(s) is the result<br> 2. Based on solution 1, bit manipulate |
