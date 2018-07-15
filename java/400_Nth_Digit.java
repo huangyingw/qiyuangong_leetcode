@@ -1,17 +1,16 @@
 class Solution {
-    public int islandPerimeter(int[][] grid) {
-        // https://leetcode.com/problems/island-perimeter/discuss/95001/clear-and-easy-java-solution
-        int islands = 0, neighbours = 0;
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[i].length; j++) {
-                if (grid[i][j] == 1) {
-                    islands++; // count islands
-                    if (i < grid.length - 1 && grid[i + 1][j] == 1) neighbours++; // count down neighbours
-                    if (j < grid[i].length - 1 && grid[i][j + 1] == 1) neighbours++; // count right neighbours
-                }
-            }
-        }
+    public int findNthDigit(int n) {
+		int len = 1;
+		long count = 9;
+		int start = 1;
+        // https://leetcode.com/problems/nth-digit/discuss/88363/Java-solution
+		while (n > len * count) {
+			n -= len * count;
+			len += 1;
+			count *= 10;
+			start *= 10;
+		}
 
-        return islands * 4 - neighbours * 2;
-    }
-}
+		start += (n - 1) / len;
+		String s = Integer.toString(start);
+		return Character.getNumericValue(s.charAt((n - 1) % len));
