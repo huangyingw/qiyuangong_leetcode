@@ -10,7 +10,8 @@ class Solution {
 			count *= 10;
 			start *= 10;
 		}
-
 		start += (n - 1) / len;
 		String s = Integer.toString(start);
 		return Character.getNumericValue(s.charAt((n - 1) % len));
+    }
+}
