@@ -140,6 +140,7 @@ Remember solutions are only solutions to given problems. If you want full study 
 | 617 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/description/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/617_Merge_Two_Binary_Trees.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/617_Merge_Two_Binary_Trees.java) | Traverse both trees Recursion & Iterative (stack) |
 | 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/771_Jewels_and_Stones.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/771_Jewels_and_Stones.java) | Count given char in string. Hash or table. [Oneline](https://leetcode.com/problems/jewels-and-stones/discuss/113574/1-liners-PythonJavaRuby) |
 | 804 | [Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/771_Jewels_and_Stones.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/771_Jewels_and_Stones.java) | String, Hash and Set. Set is recommended. |
+| 929 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/929_Unique_Email_Addresses.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/929_Unique_Email_Addresses.java) | String handle and hash (or set) |
 
 | # | To Understand |
 |---| ----- |
