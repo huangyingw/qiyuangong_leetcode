@@ -25,10 +25,10 @@ class Solution(object):
     #     return palindrom % 1337
 
     def largestPalindrome(self, n):
+        # https://leetcode.com/problems/largest-palindrome-product/discuss/96305/Python-Solution-Using-Math-In-48ms
+        # https://leetcode.com/problems/largest-palindrome-product/discuss/96294/could-any-python-experts-share-their-codes-within-100ms
         if n == 1:
             return 9
-        if n == 2:
-            return 987
         for a in xrange(2, 9 * 10 ** (n - 1)):
             hi = (10 ** n) - a
             lo = int(str(hi)[::-1])
