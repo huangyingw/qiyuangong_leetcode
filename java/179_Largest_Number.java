@@ -29,7 +29,6 @@ class Solution {
         for (String numAsStr : asStrs) {
             largestNumberStr += numAsStr;
         }
-
         return largestNumberStr;
     }
 }

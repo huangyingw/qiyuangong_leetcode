@@ -1,6 +1,10 @@
 class Solution {
-    /*public int[] sortArrayByParity(int[] A) {
-        Array.sort(A, (a, b)-> Integer.compare(a%2, b%2));
+/*    public int[] sortArrayByParity(int[] A) {
+        A = Arrays.stream(A).
+                boxed().
+                sorted((a, b) -> Integer.compare(a% 2, b % 2)).
+                mapToInt(i -> i).
+                toArray();
         return A;
     }*/
 
