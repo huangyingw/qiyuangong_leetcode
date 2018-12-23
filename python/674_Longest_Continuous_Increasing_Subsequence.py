@@ -10,8 +10,7 @@ class Solution(object):
         for i in range(len(nums) - 1):
             if nums[i] < nums[i + 1]:
                 curr += 1
-                if curr >= ans:
-                    ans = curr
+                ans = max(ans, curr)
             else:
                 curr = 1
         return ans
