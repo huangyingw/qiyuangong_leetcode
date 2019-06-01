@@ -1,0 +1,27 @@
+[remote "origin"]
+    url = https://github.com/qiyuangong/leetcode.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "github"]
+    url = git@github.com:huangyingw/leetcode.git
+    fetch = +refs/heads/*:refs/remotes/github/*
+[push]
+    remote = github
+[gsync]
+    remote = origin
+    branch = master
+[merge]
+	allow = true
+[branch "dev"]
+    remote = github
+    merge = refs/heads/dev
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[commit]
+	message = n
+[vrun]
+	silent = false
+	async = false
+[deploy]
+	host = localhost
+	path = ~/myproject/git/interview/qiyuangong/leetcode
