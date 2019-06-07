@@ -25,3 +25,5 @@
 [deploy]
 	host = localhost
 	path = ~/myproject/git/interview/qiyuangong/leetcode
+[leetcode]
+    submit = true
