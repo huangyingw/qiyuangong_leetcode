@@ -329,6 +329,7 @@
 "./python/298_Binary_Tree_Longest_Consecutive_Sequence.py"
 "./python/299_Bulls_and_Cows.py"
 "./python/303_Range_Sum_Query_Immutable.py"
+"./python/304.Range_Sum_Query_2D_Immutable.py"
 "./python/304_Range_Sum_Query_2D_Immutable.py"
 "./python/305_Number_of_Islands_II.py"
 "./python/307_Range_Sum_Query_Mutable.py"
