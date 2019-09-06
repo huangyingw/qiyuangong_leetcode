@@ -2,7 +2,9 @@
 
 Remember solutions are only solutions to given problems. If you want full study checklist for code & whiteboard interview, please turn to [jwasham's coding-interview-university](https://github.com/jwasham/coding-interview-university).
 
-Also, there are open source implementations for basic data structs and algorithms, such as [Algorithms in Python](https://github.com/TheAlgorithms/Python) and [Algorithms in Java](https://github.com/TheAlgorithms/Java). 
+Also, there are open source implementations for basic data structs and algorithms, such as [Algorithms in Python](https://github.com/TheAlgorithms/Python) and [Algorithms in Java](https://github.com/TheAlgorithms/Java).
+
+## Problems & Solutions
 
 [Python](https://github.com/qiyuangong/leetcode/tree/master/python) and [Java](https://github.com/qiyuangong/leetcode/tree/master/java) full list. &hearts; means you need a subscription.
 
@@ -94,7 +96,7 @@ Also, there are open source implementations for basic data structs and algorithm
 | 246 | [Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/246_Strobogrammatic_Number.py) | Hash table and reverse string, O(n) and O(n) |
 | 249 | [Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/249_Group_Shifted_Strings.py) | Hash and generate hash code for each string, O(n) and O(n) |
 | 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/252_Meeting_Rooms.py) | 1. Sort and compare intervals[i].end with intervals[i+1], O(nlogn) and O(1)<br>2. Sort and check intervals when count >= 2, O(nlogn) and O(n) |
-| 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/253_Meeting_Rooms_II.py) &hearts; [Java](https://github.com/qiyuangong/leetcode/blob/master/java/253_Meeting_Rooms_II.java) | 1. Priority queue and sort, O(nlogn) and O(n)<br>2. Go through timeline. If it's a start then meeting + 1, else meeting - 1. The ans is the max(meeting) in timeline. O(nlogn) and O(n) |
+| 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/253_Meeting_Rooms_II.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/253_Meeting_Rooms_II.java) | 1. Priority queue and sort, O(nlogn) and O(n)<br>2. Go through timeline. If it's a start then meeting + 1, else meeting - 1. The ans is the max(meeting) in timeline. O(nlogn) and O(n) |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/259_3Sum_Smaller.py) | 1. Reduce to two sum smaller, then binary search, O(n^2lgn) and O(1)<br>2. Reduce to two sum smaller, then two points, O(n^2) and O(1)|
 | 266 | [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/266_Palindrome_Permutation.py) | Compute frequency, check number of odd occurrences <= 1 then palindrome, O(n) and O(n)|
 | 267 | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/267_Palindrome_Permutation_II.py) | Check palindrome then generate half with [Permutations II](https://leetcode.com/problems/permutations-ii/), O(n^2) and O(n^2) |
@@ -217,7 +219,7 @@ Also, there are open source implementations for basic data structs and algorithm
 |---| ----- |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
 
-# Other Leetcode Repos
+## Other Leetcode Repos
 
 1. [haoel's leetcode](https://github.com/haoel/leetcode)
 2. [soulmachine's leetcode](https://github.com/soulmachine/leetcode)
