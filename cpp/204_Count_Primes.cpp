@@ -1,6 +1,5 @@
 // Source : https://leetcode.com/problems/count-primes/
 
-
 /********************************************************************************** 
  * 
  * Description:
@@ -113,20 +112,26 @@
 #include <vector>
 using namespace std;
 
-int countPrimes(int n) {
+int countPrimes(int n)
+{
     vector<bool> isPrimer(n, true);
 
-    for(int i=2; i*i<n; i++){
-        if (isPrimer[i]){
-            for(int j=i*i; j<n; j+=i){
+    for (int i = 2; i * i < n; i++)
+    {
+        if (isPrimer[i])
+        {
+            for (int j = i * i; j < n; j += i)
+            {
                 isPrimer[j] = false;
             }
         }
     }
 
     int cnt = 0;
-    for(int i=2; i<n; i++){
-        if (isPrimer[i]) { 
+    for (int i = 2; i < n; i++)
+    {
+        if (isPrimer[i])
+        {
             //cout << i << ", ";
             cnt++;
         }
@@ -134,15 +139,16 @@ int countPrimes(int n) {
     return cnt;
 }
 
-
-int main(int argc, char**argv) 
+int main(int argc, char **argv)
 {
     int n = 100;
-    if (argc>1){
+    if (argc > 1)
+    {
         n = atoi(argv[1]);
     }
-  
-    cout << endl << n << " : " << countPrimes(n) << endl;
+
+    cout << endl
+         << n << " : " << countPrimes(n) << endl;
 
     return 0;
 }
