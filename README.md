@@ -4,6 +4,8 @@ Remember solutions are only solutions to given problems. If you want full study 
 
 Also, there are open source implementations for basic data structs and algorithms, such as [Algorithms in Python](https://github.com/TheAlgorithms/Python) and [Algorithms in Java](https://github.com/TheAlgorithms/Java).
 
+I'm currently working on [Analytics-Zoo](https://github.com/intel-analytics/analytics-zoo) - an unified Data Analytics and AI platform. Check it out, if you are interested in big data and deep learning.
+
 ## Problems & Solutions
 
 [Python](https://github.com/qiyuangong/leetcode/tree/master/python) and [Java](https://github.com/qiyuangong/leetcode/tree/master/java) full list. &hearts; means you need a subscription.
