@@ -32,13 +32,27 @@ Constraints:
 
 class Solution:
     def numberOfSteps (self, num: int) -> int:
-        steps=0
-        while(num>0):
-            if(num%2==0):
-                num=num/2
-                steps+=1
+        steps = 0
+        while(num > 0):
+            if(num % 2 == 0):
+                num = num / 2
+                steps + =1
             else:
-                num=num-1
-                steps+=1
+                num = num - 1
+                steps += 1
         return steps
-        
+
+    # def numberOfSteps (self, num: int) -> int:
+    #     ans = 0
+    #     # check the number of 1
+    #     while num:
+    #         ans += (num & 1) + 1
+    #         num >>= 1
+    #     return ans - 1
+
+    # def numberOfSteps (self, num: int) -> int:
+    #     ones, zeros = self.bitCount(num)
+    #     if ones == 0:
+    #         return 0
+    #     else:
+    #         return 2 * ones + zeros - 1
